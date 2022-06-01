@@ -2,11 +2,18 @@
 Components/deliverables we want to accomplish: 
 
 1.) Welcome page with random drink generator with food pairing. Fetch.
+
 2.) Search for drinks. Filtering selections based on certain criteria.
+
 3.) Tasting notes/reviews. Form/post/patch. 
     - need mock reivews/db.json items
+
 4.) Local Brewery Finder.
+
 5.) Change It Up Cocktail recipes.
+
+
+
 
 
 
