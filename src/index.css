@@ -26,3 +26,13 @@ code {
   margin-top: 85px;
 }
 
+ #cocktail-pic {
+  object-fit: cover;
+  width: 25%;
+  height: 25%;
+  right: 300px;
+  bottom: 50px;
+  position: relative;
+}
+
+
