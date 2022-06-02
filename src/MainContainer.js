@@ -1,14 +1,14 @@
-import React from 'react';
-import RandomBev from './RandomBev';
-import TastingNotes from './TastingNotes';
+import React from 'react'
+import RandomBev from './RandomBev'
 
 function MainContainer() {
-    return <>
-    <div className="container">
+  return (
+    <>
+      <div className="container">
         <RandomBev />
-        <TastingNotes />
-    </div>
+      </div>
     </>
+  )
 }
 
-export default MainContainer;
+export default MainContainer

@@ -27,12 +27,38 @@ code {
 }
 
  #cocktail-pic {
-  object-fit: cover;
-  width: 25%;
-  height: 25%;
-  right: 300px;
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
   bottom: 50px;
-  position: relative;
+  
+  position: absolute;
+}
+#drink-btn{
+  position: absolute;
+  bottom: 50px;
+  right: 600px
 }
 
+#cocktail{
+  position: relative;
+  top: 500px;
+  right: 90px;
+  color: blue;
+}
 
+#beer-btn{
+  position:absolute;
+  
+ 
+}
+#local-breweries{
+  position: absolute;
+  bottom: 300px;
+  left: 400px
+}
+
+#pub-list{
+  position: relative;
+  top: 150px
+}

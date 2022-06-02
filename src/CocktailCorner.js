@@ -5,14 +5,6 @@ function CocktailCorner() {
   const [drinkName, setDrinkName] = useState([])
 
   useEffect(() => {
-    fetch('https://api.punkapi.com/v2/beers/random')
-      .then((response) => response.json())
-      .then((randoBeer) => {
-        console.log(randoBeer)
-      })
-  })
-
-  useEffect(() => {
     fetch('https://thecocktaildb.com/api/json/v1/1/random.php')
       .then((response) => response.json())
       .then((randoCocktail) => {
@@ -34,13 +26,13 @@ function CocktailCorner() {
         setDrinkPic(cocktailPic)
       })
   }
-
+  console.log(drinkName)
   return (
     <div>
+      <h3 id="cocktail">{drinkName}</h3>
       <button id="drink-btn" onClick={displayCocktail}>
         Cocktail
       </button>
-      {drinkName}
       <div>
         <img id="cocktail-pic" src={drinkPic} alt="A Lovely Libation"></img>
       </div>

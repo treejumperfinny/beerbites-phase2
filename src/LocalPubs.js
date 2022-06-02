@@ -21,7 +21,9 @@ function LocalPubs() {
       <form id="local-breweries" onSubmit={handleSubmit}>
         <label className="yourZip">Enter Zip</label>
         <input type="text" onChange={handleZipInput} value={userEntry} />
-        <button type="submit">GO</button>
+        <button id="beer-btn" type="submit">
+          GO
+        </button>
       </form>
 
       <ul id="pub-list">
