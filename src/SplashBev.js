@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 import React from 'react';
 // import MainContainer from './MainContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-=======
-import React from "react";
-import MainContainer from "./MainContainer";
-import "bootstrap/dist/css/bootstrap.min.css";
->>>>>>> main
 
 
 function SplashBev() {
@@ -15,7 +9,6 @@ function SplashBev() {
       <br />
       <div className="welcome-card">
         <div>
-<<<<<<< HEAD
         <img src={require("./testing-img/welcomebanner.png")} alt="placeholder" className="bbimg" />
             <h1 className="welcome">Welcome to beerbites!</h1> 
             <p>
@@ -35,23 +28,6 @@ function SplashBev() {
         {/* <MainContainer /> */}
     </div>
     
-=======
-          <img
-            src={require("./testing-img/bb-icon.png")}
-            alt="placeholder"
-            className="bbimg"
-          />
-          <h1>Welcome to beerbites!</h1>{" "}
-          <p>
-            Want to have a new tasty beer with your lunch or dinner? Looking for
-            a spot to check out to finally enjoy that Pilsner you've been
-            thinking about? Well, you are in the right place. Take a second to
-            look around and plan out all of the delicous drinks that lay ahead.
-          </p>
-        </div>
-        <MainContainer />
-      </div>
->>>>>>> main
     </>
   );
 }

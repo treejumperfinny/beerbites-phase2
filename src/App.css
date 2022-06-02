@@ -60,14 +60,11 @@
 .logo {
   font-size: 16pt;
   color: #DECBB7;
-<<<<<<< HEAD
   height: 80px !important;
-=======
 }
 
 .listing-image {
   width: 300px;
   height:300px;
   object-fit: contain;
->>>>>>> main
 }
