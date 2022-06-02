@@ -7,14 +7,6 @@ function CocktailCorner() {
   const [drinkName, setDrinkName] = useState([])
 
   useEffect(() => {
-    fetch('https://api.punkapi.com/v2/beers/random')
-      .then((response) => response.json())
-      .then((randoBeer) => {
-        console.log(randoBeer)
-      })
-  })
-
-  useEffect(() => {
     fetch('https://thecocktaildb.com/api/json/v1/1/random.php')
       .then((response) => response.json())
       .then((randoCocktail) => {

@@ -1,19 +1,21 @@
-import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom'
+import React from 'react'
+import { Nav, Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 function NavHead() {
   return (
     <>
       <div className="navi">
+
         <Navbar bg="bbcolors" variant="dark" fixed="top" className="logo" height="90px">
+
           <Navbar.Brand>
             <img
               src={require('./testing-img/bb-icon.png')}
               alt="logo"
               className="navimg"
             />
-            
+    
           </Navbar.Brand>
           <Nav>
             <Link className="nav-link" to="/">
@@ -35,7 +37,7 @@ function NavHead() {
         </Navbar>
       </div>
     </>
-  )
-};
+  ) 
+}
 
 export default NavHead;
