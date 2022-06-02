@@ -1,44 +1,46 @@
 import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
-
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function NavHead() {
   return (
     <>
       <div className="navi">
-        <Navbar bg="bbcolors" variant="dark" fixed="top" className="logo">
+
+        <Navbar bg="bbcolors" variant="dark" fixed="top" className="logo" height="90px">
+
           <Navbar.Brand>
             <img
               src={require('./testing-img/bb-icon.png')}
               alt="logo"
               className="navimg"
             />
-            beerbites
+    
           </Navbar.Brand>
-
           <Nav>
             <Link className="nav-link" to="/">
               Home
             </Link>
-            <Link className="nav-link" to="search-brews">
-              Search Brews
+            <Link className="nav-link" to="/discover">
+              Daily Discovery
             </Link>
             <Link className="nav-link" to="/tasting-notes">
               Tasting Notes
             </Link>
+            <Link className="nav-link" to="/search">
+              Search Brews
+            </Link>            
             <Link className="nav-link" to="/pubs">
-              Local Brews
+              Local Breweries
             </Link>
-
             <Link className="nav-link" to="/cocktails">
-              Cocktails
+              Cocktail Corner
             </Link>
           </Nav>
         </Navbar>
       </div>
     </>
-  )
+  ) 
 }
 
-export default NavHead
+export default NavHead;

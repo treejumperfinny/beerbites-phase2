@@ -82,11 +82,15 @@ function TastingNotes() {
 
   return (
     <>
+<<<<<<< HEAD
+     <Card>
+=======
       <br />
       <br />
       <br />
       {displayCards}
       <Card>
+>>>>>>> main
         <div className="card text-center">
           <div className="card-header">Tasting Notes</div>
           <div className="card-body">
@@ -162,7 +166,11 @@ function TastingNotes() {
                     ></textarea>
                   </div>
                   <div className="form-group">
+<<<<<<< HEAD
+                    <Button className="mb-3 button" type="submit">
+=======
                     <Button className="mb-3" type="submit">
+>>>>>>> main
                       Take Note
                     </Button>
                   </div>
@@ -172,6 +180,21 @@ function TastingNotes() {
           </div>
         </div>
       </Card>
+<<<<<<< HEAD
+      <Card>
+      <div className="past-notes">
+      <div className="card text-center">
+          <div className="card-header">Previous Notes</div>
+          <div className="card-body">
+            <h4 className="card-title">Beverage Review</h4>
+      <div>{displayCards}</div>
+      </div>
+      </div>
+      </div>
+      
+      </Card>
+=======
+>>>>>>> main
     </>
   );
 }

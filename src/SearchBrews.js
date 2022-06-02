@@ -40,7 +40,10 @@ function SearchBrews() {
     setPosition(position + 1)
   }
   return (
-    <div id="parent">
+    <div id="parent" className="searcher">
+        <div className='descript'>
+        <h4>Search by ABV</h4>
+        </div>
       <Form.Select
         onChange={handleAbv}
         id="selection"
@@ -52,7 +55,7 @@ function SearchBrews() {
         <option value="abv_gt=7.0">Heavy</option>
       </Form.Select>
 
-      <Card style={{ width: '18rem' }}>
+      <Card className='result'>
         <Card.Img variant="top" src={beerImage} />
         <Card.Body>
           <Card.Title>{oneBeerName}</Card.Title>
