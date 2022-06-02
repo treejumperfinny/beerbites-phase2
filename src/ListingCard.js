@@ -12,8 +12,4 @@ function ListingCard({ name, description, image, rating, abv }) {
   );
 }
 
-<<<<<<< HEAD
 export default ListingCard;
-=======
-export default ListingCard;
->>>>>>> main
