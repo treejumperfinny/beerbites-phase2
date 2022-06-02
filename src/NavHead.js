@@ -27,8 +27,11 @@ function NavHead() {
             <Link className="nav-link" to="/tasting-notes">
               Tasting Notes
             </Link>
+            <Link className="nav-link" to="/search">
+              Search Brews
+            </Link>            
             <Link className="nav-link" to="/pubs">
-              Local Brews
+              Local Breweries
             </Link>
             <Link className="nav-link" to="/cocktails">
               Cocktail Corner

@@ -70,6 +70,21 @@ code {
   top: 150px
 }
 
-.welcome, p {
+.welcome, p, h4 {
   font-family: 'Roboto Slab', Serif;
 }
+
+.searcher {
+ margin-top: 65px;
+}
+
+#selection {
+  width: 300px;
+  text-align: center;
+  font-size: 16pt;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  font-family: 'Roboto Slab', serif;
+}
+

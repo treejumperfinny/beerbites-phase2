@@ -9,6 +9,7 @@ import RandomBev from './RandomBev'
 import SplashBev from './SplashBev'
 import LocalPubs from './LocalPubs'
 import CocktailCorner from './CocktailCorner'
+import SearchBrews from './SearchBrews'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -18,6 +19,7 @@ root.render(
         <Route index element={<SplashBev />} />
         <Route path="/tasting-notes" element={<TastingNotes />} />
         <Route path="/discover" element={<RandomBev />} />
+        <Route path="/search" element={<SearchBrews />} />
         <Route path="/pubs" element={<LocalPubs />} />
         <Route path="/cocktails" element={<CocktailCorner />} />
       </Route>
