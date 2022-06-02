@@ -11,6 +11,12 @@ function RandomBev() {
             .then((drinkFacts) => setDrinkFacts(drinkFacts[0]))
     }, [])
 
+    function newDrink() {
+        fetch('https://api.punkapi.com/v2/beers/random')
+        .then((r) => r.json())
+        .then((drinkFacts) => setDrinkFacts(drinkFacts[0]))
+    }
+
     return <>
         <div className="card text-center">
             <div className="card-header">
@@ -35,7 +41,7 @@ function RandomBev() {
                         </ul>
                     </div>
                 </div>
-                <Button className="button">New beverage!</Button>
+                <Button className="button" onClick={newDrink}>Discover More</Button>
             </div>
         </div>
     </>

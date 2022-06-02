@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import TastingNotes from './TastingNotes'
 import RandomBev from './RandomBev'
 import SplashBev from './SplashBev'
+import LocalPubs from './LocalPubs'
+import CocktailCorner from './CocktailCorner'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -16,6 +18,8 @@ root.render(
         <Route index element={<SplashBev />} />
         <Route path="/tasting-notes" element={<TastingNotes />} />
         <Route path="/discover" element={<RandomBev />} />
+        <Route path="/pubs" element={<LocalPubs />} />
+        <Route path="/cocktails" element={<CocktailCorner />} />
       </Route>
     </Routes>
   </BrowserRouter>

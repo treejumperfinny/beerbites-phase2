@@ -22,13 +22,10 @@ function NavHead() {
               Home
             </Link>
             <Link className="nav-link" to="/discover">
-              Discover
+              Daily Discovery
             </Link>
             <Link className="nav-link" to="/tasting-notes">
               Tasting Notes
-            </Link>
-            <Link className="nav-link" to="/">
-              Search Brews
             </Link>
             <Link className="nav-link" to="/pubs">
               Local Brews

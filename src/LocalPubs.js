@@ -32,12 +32,12 @@ function LocalPubs() {
           <form id="local-breweries" onSubmit={handleSubmit}>
             <label className="yourZip">Enter Zip</label>
             <input type="text" onChange={handleZipInput} value={userEntry} />
-            <Button className="button" type="submit">Discover New Favorite</Button>
+            <Button className="button" type="submit">Find A New Favorite</Button>
           </form>
 
           <div className="local-pubs">
           <ul id="pub-list">
-          <h4>List of Local Breweries</h4>
+          <h4>Breweries In Your Area:</h4>
             {breweryReturn.map((brewery) => (
               <li key={brewery.id}>
                 {brewery.name} -●- {brewery.street}
