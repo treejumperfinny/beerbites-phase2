@@ -21,6 +21,9 @@ function NavHead() {
             <Link className="nav-link" to="/">
               Home
             </Link>
+            <Link className="nav-link" to="/discover">
+              Discover
+            </Link>
             <Link className="nav-link" to="/tasting-notes">
               Tasting Notes
             </Link>

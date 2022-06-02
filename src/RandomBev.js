@@ -31,7 +31,7 @@ function RandomBev() {
                     <div className="bites-part">
                         <h5>Suggested Bites:</h5>
                         <ul>
-                            {drinkFacts.food_pairing.map((pairing) => <li>{pairing}</li>)}
+                            {drinkFacts?.food_pairing?.map((pairing) => <li key={pairing}>{pairing}</li>)}
                         </ul>
                     </div>
                 </div>
