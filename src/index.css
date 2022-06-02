@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 50px;
+  padding: 80px;
 }
 
 code {
@@ -17,12 +19,41 @@ code {
  height: 200px;
 }
 
-.testingimg {
-  height: 400px;
+.randomimg {
+  height: 300px;
+  width: auto;
 }
 
 .card-body {
-  padding-top: 85px;
-  margin-top: 85px;
+  padding-top: 5px;
+  margin-top: 5px;
 }
 
+.card {
+  margin-bottom: 100px !important;
+}
+
+.cocktail {
+  height: 300px;
+  width: auto;
+
+}
+
+#drink-btn {
+  margin: 25px;
+}
+
+.button {
+  margin: 25px;
+}
+
+.card-header {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; 
+  font-size: 24pt;
+}
+
+.card-body {
+  font-family: 'Roboto Slab', serif;
+}

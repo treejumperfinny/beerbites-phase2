@@ -5,8 +5,7 @@ import TastingNotes from './TastingNotes';
 function MainContainer() {
     return <>
     <div className="container">
-        <RandomBev />
-        <TastingNotes />
+       
     </div>
     </>
 }

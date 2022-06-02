@@ -45,7 +45,7 @@ function TastingNotes() {
 
                     </Form.Group>
                 </div>
-                <Button className="mb-3" >Take Note</Button>
+                <Button className="mb-3 button" >Take Note</Button>
             </div>
         </div>
         </Card>
