@@ -8,21 +8,18 @@ function CocktailCorner() {
   const [drinkInst, setDrinkInst] = useState([])
   // const [ingre, setIngr] = useState([])
 
-  useEffect(() => {
-    fetch('https://thecocktaildb.com/api/json/v1/1/random.php')
-      .then((response) => response.json())
-      .then((randoCocktail) => {
-        let cocktailName = randoCocktail.drinks[0].strDrink
-        let cocktailPic = randoCocktail.drinks[0].strDrinkThumb
-        let cocktailInst = randoCocktail.drinks[0].strInstructions
-        // let mixins = getTheIngredients(randoCocktail.drinks[0])
-        
-        // setIngr(mixins)
-        setDrinkName(cocktailName)
-        setDrinkPic(cocktailPic)
-        setDrinkInst(cocktailInst)        
-      })
-  }, [])
+  //   useEffect(() => {
+  //     fetch('https://thecocktaildb.com/api/json/v1/1/random.php')
+  //       .then((response) => response.json())
+  //       .then((randoCocktail) => {
+  //         let cocktailName = randoCocktail.drinks[0].strDrink
+  //         let cocktailPic = randoCocktail.drinks[0].strDrinkThumb
+
+  //         setDrinkName(cocktailName)
+  //         setDrinkPic(cocktailPic)
+  //       })
+  //   }, [])
+  useEffect(() => displayCocktail, [])
 
   function displayCocktail() {
     fetch('https://thecocktaildb.com/api/json/v1/1/random.php')
