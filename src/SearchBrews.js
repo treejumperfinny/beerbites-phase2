@@ -6,13 +6,13 @@ import Row from 'react-bootstrap/Row'
 
 function SearchBrews() {
   const [abv, setAbv] = useState([])
-
   const [beerImage, setBeerImage] = useState('')
+  const [position, setPosition] = useState(0)
 
   function handleAbv(e) {
     const abvSearch = e.target.value
 
-    fetch(`https://api.punkapi.com/v2/beers?${abvSearch}&per_page=5`)
+    fetch(`https://api.punkapi.com/v2/beers?${abvSearch}`)
       .then((response) => response.json())
       .then((beers) => setAbv(beers))
 
@@ -33,6 +33,12 @@ function SearchBrews() {
   const beerName = abv.map((beer) => beer.name)
   const beerDescription = abv.map((beer) => beer.description)
 
+  const oneBeerName = beerName.slice(position, position + 1)
+  const oneBeerDescription = beerDescription.slice(position, position + 1)
+
+  function changeBeer() {
+    setPosition(position + 1)
+  }
   return (
     <div id="parent">
       <Form.Select
@@ -49,8 +55,11 @@ function SearchBrews() {
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={beerImage} />
         <Card.Body>
-          <Card.Title>{beerName[0]}</Card.Title>
-          <Card.Text>{beerDescription[0]}</Card.Text>
+          <Card.Title>{oneBeerName}</Card.Title>
+          <Card.Text>{oneBeerDescription}</Card.Text>
+          <Button onClick={changeBeer} variant="primary">
+            Get Another Beer
+          </Button>
         </Card.Body>
       </Card>
 
