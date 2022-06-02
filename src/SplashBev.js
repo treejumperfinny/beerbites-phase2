@@ -1,6 +1,4 @@
 import React from 'react';
-// import MainContainer from './MainContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function SplashBev() {
@@ -25,7 +23,6 @@ function SplashBev() {
             Well, you are in the right place. Take a second to look around and plan out all of the delicous drinks that lay ahead.
             </p>
         </div>
-        {/* <MainContainer /> */}
     </div>
     
     </>

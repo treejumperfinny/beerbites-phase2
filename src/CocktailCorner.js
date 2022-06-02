@@ -1,24 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button } from 'react-bootstrap'
 
 function CocktailCorner() {
   const [drinkPic, setDrinkPic] = useState([])
   const [drinkName, setDrinkName] = useState([])
   const [drinkInst, setDrinkInst] = useState([])
-  // const [ingre, setIngr] = useState([])
 
-  //   useEffect(() => {
-  //     fetch('https://thecocktaildb.com/api/json/v1/1/random.php')
-  //       .then((response) => response.json())
-  //       .then((randoCocktail) => {
-  //         let cocktailName = randoCocktail.drinks[0].strDrink
-  //         let cocktailPic = randoCocktail.drinks[0].strDrinkThumb
-
-  //         setDrinkName(cocktailName)
-  //         setDrinkPic(cocktailPic)
-  //       })
-  //   }, [])
   useEffect(() => displayCocktail, [])
 
   function displayCocktail() {

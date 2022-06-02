@@ -5,11 +5,7 @@ import { Button } from 'react-bootstrap';
 function RandomBev() {
   const [drinkFacts, setDrinkFacts] = useState({})
 
-  useEffect(() => {
-    fetch('https://api.punkapi.com/v2/beers/random')
-      .then((r) => r.json())
-      .then((drinkFacts) => setDrinkFacts(drinkFacts[0]))
-  }, [])
+  useEffect(newDrink, [])
 
   function newDrink() {
     fetch('https://api.punkapi.com/v2/beers/random')

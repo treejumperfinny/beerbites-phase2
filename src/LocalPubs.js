@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 
 
@@ -36,22 +35,22 @@ function LocalPubs() {
           </form>
 
           <div className="local-pubs">
-          <ul id="pub-list">
-          <h4>Breweries In Your Area:</h4>
-            {breweryReturn.map((brewery) => (
-              <li key={brewery.id}>
-                {brewery.name} -●- {brewery.street}
-              </li>
-            ))}
-          </ul>
+            <ul id="pub-list">
+              <h4>Breweries In Your Area:</h4>
+              {breweryReturn.map((brewery) => (
+                <li key={brewery.id}>
+                  {brewery.name} -●- {brewery.street}
+                </li>
+              ))}
+            </ul>
           </div>
 
         </div>
       </div>
-      </div>
-    </>
+    </div>
+  </>
 }
 
-    export default LocalPubs
+export default LocalPubs
 
 
